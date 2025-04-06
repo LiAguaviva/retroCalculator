@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'E1234';
+  src: url('../assets/E1234.ttf') format('truetype'), 
+       url('../assets/E1234-Italic.ttf') format('truetype'); 
+  font-weight: bolder;
+  font-style: normal;
+}
+
+
+body {
+  background-image: url("../assets/calculatorRenderF2.jpg");
+  background-color: rgb(225, 215, 203);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: changeBg 7s infinite alternate;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes changeBg {
+  0% {
+    background-image: url("../assets/calculatorRenderF2.jpg");
+  }
+
+  45% {
+    background-image: url("../assets/calculatorRenderF2.jpg");
+  }
+  45% {
+    background-image: url("../assets/calculatorRenderF1.jpg");
+  }
+
+  65% {
+    background-image: url("../assets/calculatorRenderFsad.jpg");
+  }
+  
+  75% {
+    background-image: url("../assets/calculatorRenderFsad.jpg");
+  }
+
+  95% {
+    background-image: url("../assets/calculatorRenderF2.jpg");
+  }
+  95% {
+    background-image: url("../assets/calculatorRenderF1.jpg");
+  }
+
+  100% {
+    background-image: url("../assets/calculatorRenderF2.jpg");
+  }
+
+}
+
+.allKeysContainer {
+  height: 35rem;
+  width: 42rem;
+  margin-left: 11%;
+  
+  @media (max-width: 2300px){
+    width: 43rem;
+    margin-left: 10%;
+  }
+  @media (max-width: 1700px){
+    width: 40rem;
+    margin-left: 15%;
+  }
+  @media (max-width: 1300px){
+    margin-left: 20%;
+  }
+  @media (max-width: 1000px){
+    margin-left: 30%;
+  }
+}
+
+.rightKeys-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 13rem;
+  margin-bottom: -3rem;
+  
+  input {
+    --size: 5rem;
+    height: var(--size);
+    width: var(--size);
+
+    &:hover {
+      width: calc(var(--size) + 1%);
+    }
+  }
+}
+
+.screen {
+  background-image: none;
+  color: rgba(83, 245, 145, 0.63);
+  text-shadow: 0 0 2px rgb(83, 245, 145);
+  font-family: 'E1234', sans-serif;
+  font-size: 3rem;
+
+  border: none;
+  height: 4rem;
+  width: 70%;
+  padding-left: 10%;
+}
+
+.key-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  --size: 5rem;
+  
+  .keyRow{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  input {
+    width: var(--size);
+    height: var(--size);
+
+    &:hover {
+      height: calc(var(--size) + 4px);
+      margin-top: -4px;
+    }
+  }
+}
+
+input {
+  --ms: 40ms;
+  transition: 
+    width var(--ms),
+    height var(--ms),
+    background-image var(--ms),
+    margin-top 0.01ms,
+    margin-inline 0.01ms;
+}
+
+input {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+
+  background-image: url("../assets/key1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.inputON {
+  background-image: url(../assets/buttonMusicOn2.png);
+  background-size: contain;
+
+  &:hover {
+    background-image: url(../assets/buttonMusicOn2Hover.png);
+  }
+}
+
+.key1 {
+  background-image: url("../assets/key1.png");
+
+  &:hover {
+    background-image: url("../assets/key1hover.png");
+  }
+}
+
+.key2 {
+  background-image: url("../assets/key2.png");
+
+  &:hover {
+    background-image: url("../assets/key2hover.png");
+  }
+}
+
+.key3 {
+  background-image: url("../assets/key3.png");
+
+  &:hover {
+    background-image: url("../assets/key3hover.png");
+  }
+}
+
+.key4 {
+  background-image: url("../assets/key4.png");
+
+  &:hover {
+    background-image: url("../assets/key4hover.png");
+  }
+}
+
+.key5 {
+  background-image: url("../assets/key5.png");
+
+  &:hover {
+    background-image: url("../assets/key5hover.png");
+  }
+}
+
+.key6 {
+  background-image: url("../assets/key6.png");
+
+  &:hover {
+    background-image: url("../assets/key6hover.png");
+  }
+}
+
+.key7 {
+  background-image: url("../assets/key7.png");
+
+  &:hover {
+    background-image: url("../assets/key7hover.png");
+  }
+}
+
+.key8 {
+  background-image: url("../assets/key8.png");
+
+  &:hover {
+    background-image: url("../assets/key8hover.png");
+  }
+}
+
+.key9 {
+  background-image: url("../assets/key9.png");
+
+  &:hover {
+    background-image: url("../assets/key9hover.png");
+  }
+}
+
+.key0 {
+  background-image: url("../assets/key0.png");
+
+  &:hover {
+    background-image: url("../assets/key0hover.png");
+  }
+}
+
+.keySum {
+  background-image: url("../assets/keySum.png");
+
+  &:hover {
+    background-image: url("../assets/keySumhover.png");
+  }
+}
+
+.keyRes {
+  background-image: url("../assets/keyRes.png");
+
+  &:hover {
+    background-image: url("../assets/keyReshover.png");
+  }
+}
+
+.keyMul {
+  background-image: url("../assets/keyMul.png");
+
+  &:hover {
+    background-image: url("../assets/keyMulhover.png");
+  }
+}
+
+.keyDiv {
+  background-image: url("../assets/keyDiv.png");
+
+  &:hover {
+    background-image: url("../assets/keyDivhover.png");
+  }
+}
+
+.keyC {
+  background-image: url("../assets/keyC.png");
+
+  &:hover {
+    background-image: url("../assets/keyChover.png");
+  }
+}
+
+.keyResult {
+  background-image: url("../assets/keyResult.png");
+
+  &:hover {
+    background-image: url("../assets/keyResulthover.png");
+  }
+}
+
