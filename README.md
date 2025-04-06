@@ -6,9 +6,9 @@ A playful retro-style calculator built with **HTML, CSS, and JavaScript**, featu
 
 ## 📸 Screenshots
 
-![Calculator screenshot](Screenshots/calculator_1.JPG)
-![Calculator screenshot](Screenshots/calculator_2.JPG)
-![Calculator screenshot](Screenshots/calculator_3.JPG)
+![Calculator screenshot](screenshots/calculator_1.JPG)
+![Calculator screenshot](screenshots/calculator_2.JPG)
+![Calculator screenshot](screenshots/calculator_3.JPG)
 
 ## ✨ Features
 
